@@ -3,7 +3,7 @@ import open from 'open';
 
 const app = express();
 
-const port = 4000;
+const port = 8000;
 
 app.get('/', (req, res) => {
     res.send('hello word');
