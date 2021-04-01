@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "open": "^8.0.2"
+    "open": "^8.0.2",
+    "puppeteer": "^8.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",

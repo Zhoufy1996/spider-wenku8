@@ -1,15 +1,13 @@
-import express from 'express';
-import open from 'open';
+import Spider from './spider';
 
-const app = express();
+const init = async () => {
+    const spider = new Spider({ devtools: true });
+    await spider.createBrowser();
+    await spider.createPage();
+    await spider.login();
+    await spider.goToList();
+    await spider.goToDetail();
+    await spider.goToDownload();
+};
 
-const port = 8000;
-
-app.get('/', (req, res) => {
-    res.send('hello word');
-});
-
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-    open(`http://localhost:${port}`);
-});
+init();

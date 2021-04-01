@@ -7,7 +7,7 @@
       {
         "type": "node",
         "request": "launch",
-        "name": "test",
+        "name": "start",
         "cwd": "${workspaceFolder}",
         "runtimeExecutable": "npm",
         "runtimeArgs": ["run-script", "start"],

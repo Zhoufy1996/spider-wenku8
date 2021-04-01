@@ -7,11 +7,13 @@ const eslintConfig = {
         'plugin:import/typescript',
     ],
     env: {
-        browser: false,
+        browser: true,
         node: true,
         jest: true,
     },
-    globals: {},
+    globals: {
+        document: true,
+    },
     // error warning off
     rules: {
         'no-console': 'off',
